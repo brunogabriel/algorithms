@@ -15,8 +15,8 @@ class EuclidesTest {
     @Test
     fun `testing calculating GCD`() {
         tests.forEach {
-            assertThat(Euclides.calculateLinearGCD(it.first, it.second)).isEqualTo(it.third)
-            assertThat(Euclides.calculateRecursiveGCD(it.first, it.second)).isEqualTo(it.third)
+            assertThat(calculateGCD(it.first, it.second)).isEqualTo(it.third)
+            assertThat(calculateRecursiveGCD(it.first, it.second)).isEqualTo(it.third)
         }
     }
 }

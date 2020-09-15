@@ -8,7 +8,7 @@ class QuickSortTest {
     @Test
     fun `testing quickSort`() {
         sortingTests().forEach {
-            assertThat(QuickSort.sortMiddlePivot(it.first)).isEqualTo(it.second)
+            assertThat(quickSort(it.first)).isEqualTo(it.second)
         }
     }
 }

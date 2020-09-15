@@ -1,8 +1,6 @@
 package io.github.brunogabriel.binarysearch
 
-import io.github.brunogabriel.exception.NotFoundException
 import org.assertj.core.api.Assertions.assertThat
-import org.assertj.core.api.Assertions.assertThatThrownBy
 import org.junit.Test
 
 class BinarySearchTest {
@@ -12,21 +10,16 @@ class BinarySearchTest {
     @Test
     fun `testing all methods`() {
         array.forEachIndexed { index, i ->
-            assertThat(BinarySearch.linear(array, i)).isEqualTo(index)
-            assertThat(BinarySearch.recursive(array, i)).isEqualTo(index)
+            assertThat(binarySearch(array, i)).isEqualTo(index)
+            assertThat(recursiveBinarySearch(array, i)).isEqualTo(index)
         }
     }
 
     @Test
     fun `testing invalid inputs`() {
-        invalidInputs.forEach { input ->
-            assertThatThrownBy { BinarySearch.linear(array, input) }
-                .isInstanceOf(NotFoundException::class.java)
-                .hasMessage(BinarySearch.invalidValueMessage)
-
-            assertThatThrownBy { BinarySearch.recursive(array, input) }
-                .isInstanceOf(NotFoundException::class.java)
-                .hasMessage(BinarySearch.invalidValueMessage)
+        invalidInputs.forEach {
+            assertThat(binarySearch(array, it)).isEqualTo(Int.MIN_VALUE)
+            assertThat(recursiveBinarySearch(array, it)).isEqualTo(Int.MIN_VALUE)
         }
     }
 }

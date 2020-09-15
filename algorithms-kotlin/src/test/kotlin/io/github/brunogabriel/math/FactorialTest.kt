@@ -1,9 +1,7 @@
 package io.github.brunogabriel.math
 
 import org.assertj.core.api.Assertions.assertThat
-import org.assertj.core.api.Assertions.assertThatThrownBy
 import org.junit.Test
-import java.security.InvalidParameterException
 
 class FactorialTest {
     private val tests = listOf(
@@ -19,21 +17,16 @@ class FactorialTest {
     @Test
     fun `testing all methods`() {
         tests.forEach {
-            assertThat(Factorial.linear(it.first)).isEqualTo(it.second)
-            assertThat(Factorial.recursive(it.first)).isEqualTo(it.second)
+            assertThat(factorial(it.first)).isEqualTo(it.second)
+            assertThat(factorialRecursive(it.first)).isEqualTo(it.second)
         }
     }
 
     @Test
     fun `testing invalid inputs`() {
-        invalidInputs.forEach { input ->
-            assertThatThrownBy { Factorial.linear(input) }
-                .isInstanceOf(InvalidParameterException::class.java)
-                .hasMessage(Factorial.invalidNumberMessage)
-
-            assertThatThrownBy { Factorial.recursive(input) }
-                .isInstanceOf(InvalidParameterException::class.java)
-                .hasMessage(Factorial.invalidNumberMessage)
+        invalidInputs.forEach {
+            assertThat(factorial(it)).isEqualTo(Long.MIN_VALUE)
+            assertThat(factorialRecursive(it)).isEqualTo(Long.MIN_VALUE)
         }
     }
 }
