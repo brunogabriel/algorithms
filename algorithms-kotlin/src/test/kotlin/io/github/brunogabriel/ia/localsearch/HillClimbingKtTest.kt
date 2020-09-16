@@ -24,9 +24,9 @@ class HillClimbingKtTest {
     fun `test hillClimbing`() {
         // given
         every { randomFunction() } returnsMany listOf(1.0, 2.0, 3.0)
-        every { maxFunction(1.0) } returns 1.0
-        every { maxFunction(2.0) } returns 2.0
-        every { maxFunction(3.0) } returns 3.0
+        every { maxFunction(1.0) } returns 2.0
+        every { maxFunction(2.0) } returns 4.0
+        every { maxFunction(3.0) } returns 6.0
 
         // when
         val result = hillClimbing(2, randomFunction, maxFunction)
