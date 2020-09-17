@@ -32,4 +32,9 @@ I tried to test all the codes and some algorithms have more than one implementat
 
 ### Local Search
 
-- [Hill Climbing](src/main/io/uuddlrlrba/ktalgs/geometry/convexhull/GiftWrapping.kt)
+- [Hill Climbing](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/ia/localsearch/HillClimbing.kt)
+
+## TO DO List
+
+- [] Add a tool to code quality
+- [] Add detekt support
