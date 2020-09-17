@@ -25,11 +25,11 @@ I tried to test all the codes and some algorithms have more than one implementat
 
 ### Math
 
-- [Anagram](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/Anagram.kt)
-- [Euclides](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/Euclides.kt)
-- [Factorial](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/Factorial.kt)
-- [Luhn Check](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/LuhnCheck.kt)
-- [Palindrome](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/Palindrome.kt)
+- [Anagram](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/Anagram.kt)
+- [Euclides](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/Euclides.kt)
+- [Factorial](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/Factorial.kt)
+- [Luhn Check](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/LuhnCheck.kt)
+- [Palindrome](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/Palindrome.kt)
 
 ### Local Search
 
