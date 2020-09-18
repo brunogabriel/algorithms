@@ -21,6 +21,7 @@ I tried to test all the codes and some algorithms have more than one implementat
 
 ### Graphs
 
+- [Breadth First Search](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/graph/bfs/BreadthFirstSearch.kt)
 - [Dijkstra's shortest paths](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/graph/dijkstras/Dijkstras.kt)
 
 ### Math
