@@ -13,16 +13,16 @@ I tried to test all the codes and some algorithms have more than one implementat
 
 ### Data Structures
 
-- [Binary Tree](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/datastructure/tree/BinaryTree.kt)
+- [Binary Tree](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/datastructure/BinaryTree.kt)
 
 ### Search
 
-- [Binary Search](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/search/binarysearch/BinarySearch.kt)
+- [Binary Search](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/search/BinarySearch.kt)
 
 ### Graphs
 
-- [Breadth First Search](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/graph/bfs/BreadthFirstSearch.kt)
-- [Dijkstra's shortest paths](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/graph/dijkstras/Dijkstras.kt)
+- [Breadth First Search](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/graph/BreadthFirstSearch.kt)
+- [Dijkstra's shortest paths](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/graph/Dijkstras.kt)
 
 ### Math
 
