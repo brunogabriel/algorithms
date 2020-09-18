@@ -30,6 +30,7 @@ I tried to test all the codes and some algorithms have more than one implementat
 - [Anagram](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/Anagram.kt)
 - [Euclides](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/Euclides.kt)
 - [Factorial](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/Factorial.kt)
+- [Fibonacci](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/Fibonacci.kt)
 - [Luhn Check](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/LuhnCheck.kt)
 - [Palindrome](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/Palindrome.kt)
 - [Prime](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/Prime.kt)
