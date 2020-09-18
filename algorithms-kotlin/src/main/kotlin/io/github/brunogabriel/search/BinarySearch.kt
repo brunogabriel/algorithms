@@ -1,4 +1,4 @@
-package io.github.brunogabriel.search.binarysearch
+package io.github.brunogabriel.search
 
 fun <T : Comparable<T>> binarySearch(
         array: Array<T>,

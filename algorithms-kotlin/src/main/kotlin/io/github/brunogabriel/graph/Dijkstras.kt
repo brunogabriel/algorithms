@@ -1,6 +1,4 @@
-package io.github.brunogabriel.graph.dijkstras
-
-import io.github.brunogabriel.graph.Graph
+package io.github.brunogabriel.graph
 
 fun dijkstra(graph: Graph<String>, start: String): Map<String, Pair<String?, Int>> {
     val visitedVertices = mutableSetOf<String>()

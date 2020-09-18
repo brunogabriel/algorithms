@@ -1,4 +1,4 @@
-package io.github.brunogabriel.datastructure.tree
+package io.github.brunogabriel.datastructure
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test

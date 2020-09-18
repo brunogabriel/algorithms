@@ -1,6 +1,4 @@
-package io.github.brunogabriel.graph.bfs
-
-import io.github.brunogabriel.graph.Graph
+package io.github.brunogabriel.graph
 
 fun bfs(graph: Graph<String>, start: String): List<String> {
     val visited = mutableListOf<String>()

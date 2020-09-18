@@ -1,4 +1,4 @@
-package io.github.brunogabriel.search.binarysearch
+package io.github.brunogabriel.search
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test

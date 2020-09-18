@@ -1,6 +1,5 @@
-package io.github.brunogabriel.graph.bfs
+package io.github.brunogabriel.graph
 
-import io.github.brunogabriel.graph.Graph
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 

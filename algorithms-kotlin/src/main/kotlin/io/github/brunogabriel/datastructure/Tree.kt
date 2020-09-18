@@ -1,4 +1,4 @@
-package io.github.brunogabriel.datastructure.tree
+package io.github.brunogabriel.datastructure
 
 interface Tree<T : Comparable<T>> {
     fun height(): Int

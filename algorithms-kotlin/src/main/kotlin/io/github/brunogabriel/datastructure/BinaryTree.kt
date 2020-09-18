@@ -1,4 +1,4 @@
-package io.github.brunogabriel.datastructure.tree
+package io.github.brunogabriel.datastructure
 
 import kotlin.math.max
 
@@ -23,9 +23,9 @@ class BinaryTree<T : Comparable<T>>(
 }
 
 class BinaryNode<T : Comparable<T>>(
-        var data: T,
-        var leftNode: BinaryNode<T>? = null,
-        var rightNode: BinaryNode<T>? = null,
+    var data: T,
+    var leftNode: BinaryNode<T>? = null,
+    var rightNode: BinaryNode<T>? = null,
 ) {
     fun size(): Int {
         val leftSize = leftNode?.size() ?: 0
