@@ -1,27 +1,27 @@
 package io.github.brunogabriel.graph
 
-fun dijkstra(graph: Graph<String>, start: String): Map<String, Pair<String?, Int>> {
-    val visitedVertices = mutableSetOf<String>()
+fun <T>Graph<T>.dijkstra(start: T): Map<T, Pair<T?, Int>> {
+    val visitedVertices = mutableSetOf<T>()
 
-    val previousVertices: MutableMap<String, String?> = graph.vertices
+    val previousVertices: MutableMap<T, T?> = vertices
         .map { it to null }
         .toMap()
         .toMutableMap()
 
-    val distanceTo: MutableMap<String, Int> = graph.vertices
+    val distanceTo: MutableMap<T, Int> = vertices
         .map { it to Int.MAX_VALUE }
         .toMap()
         .toMutableMap()
 
     distanceTo[start] = 0
 
-    while (visitedVertices != graph.vertices) {
+    while (visitedVertices != vertices) {
         val vertex = distanceTo
             .filter { !visitedVertices.contains(it.key) }
             .minByOrNull { it.value }!!.key
 
-        graph.edges[vertex]?.minus(visitedVertices)?.forEach {
-            val distance = distanceTo[vertex]!! + graph.weights.getValue(Pair(vertex, it))
+        edges[vertex]?.minus(visitedVertices)?.forEach {
+            val distance = distanceTo[vertex]!! + weights.getValue(Pair(vertex, it))
             if (distance < distanceTo[it]!!) {
                 distanceTo[it] = distance
                 previousVertices[it] = vertex

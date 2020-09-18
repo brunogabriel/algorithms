@@ -36,7 +36,7 @@ class DijkstrasTest {
         graph = Graph(vertices, edges, weights)
 
         // when
-        assertThat(dijkstra(graph, "A")).isEqualTo(
+        assertThat(graph.dijkstra("A")).isEqualTo(
             mapOf("A" to Pair(null, 0),
                 "B" to Pair("C", 3),
                 "C" to Pair("A", 2),

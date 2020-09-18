@@ -1,13 +1,13 @@
 package io.github.brunogabriel.graph
 
-import org.assertj.core.api.Assertions.assertThat
+import org.assertj.core.api.Assertions
 import org.junit.Test
 
-class BreadthFirstSearchTest {
+class DepthFirstSearchTest {
     private lateinit var graph: Graph<String>
 
     @Test
-    fun `testing bfs case 1`() {
+    fun `testing dfs case 1`() {
         // given
         val vertices = setOf("1", "2", "3", "4", "5", "6")
         val edges = mapOf(
@@ -20,12 +20,12 @@ class BreadthFirstSearchTest {
         )
         graph = Graph(vertices, edges)
 
-        assertThat(graph.bfs("1"))
-            .isEqualTo(listOf("1", "2", "3", "4", "5", "6"))
+        Assertions.assertThat(graph.dfs("1"))
+            .isEqualTo(listOf("1", "3", "5", "6", "4", "2"))
     }
 
     @Test
-    fun `testing bfs case 2`() {
+    fun `testing dfd case 2`() {
         // given
         val vertices = setOf("1", "2", "3", "4", "5", "6", "7", "8", "9")
         val edges = mapOf(
@@ -41,7 +41,7 @@ class BreadthFirstSearchTest {
         )
         graph = Graph(vertices, edges)
 
-        assertThat(graph.bfs("1"))
-            .isEqualTo(listOf("1", "2", "3", "4", "5", "6", "7", "8", "9"))
+        Assertions.assertThat(graph.dfs("1"))
+            .isEqualTo(listOf("1", "4", "8", "9", "3", "7", "2", "6", "5"))
     }
 }

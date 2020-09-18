@@ -1,19 +1,20 @@
 package io.github.brunogabriel.graph
 
-fun <T> Graph<T>.bfs(start: T): List<T> {
+import java.util.*
+
+fun <T> Graph<T>.dfs(start: T): MutableList<T> {
     val visited = mutableListOf<T>()
-    val queue = mutableListOf<T>().apply {
-        add(start)
+    val stack = LinkedList<T>().apply {
+        push(start)
     }
-    while (queue.isNotEmpty()) {
-        val node = queue.removeAt(0)
+    while (stack.isNotEmpty()) {
+        val node = stack.pop()
         if (!visited.contains(node)) {
             visited.add(node)
             edges[node]?.forEach {
-                queue.add(it)
+                stack.push(it)
             }
         }
     }
-
     return visited
 }
