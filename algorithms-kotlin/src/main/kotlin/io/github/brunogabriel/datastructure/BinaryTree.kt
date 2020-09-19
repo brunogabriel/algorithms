@@ -3,7 +3,7 @@ package io.github.brunogabriel.datastructure
 import kotlin.math.max
 
 class BinaryTree<T : Comparable<T>>(
-    var root: BinaryNode<T>? = null
+    private var root: BinaryNode<T>? = null
 ) : Tree<T> {
     override fun height(): Int {
         return root?.height() ?: 0
@@ -23,9 +23,9 @@ class BinaryTree<T : Comparable<T>>(
 }
 
 class BinaryNode<T : Comparable<T>>(
-    var data: T,
-    var leftNode: BinaryNode<T>? = null,
-    var rightNode: BinaryNode<T>? = null,
+    private var data: T,
+    private var leftNode: BinaryNode<T>? = null,
+    private var rightNode: BinaryNode<T>? = null,
 ) {
     fun size(): Int {
         val leftSize = leftNode?.size() ?: 0

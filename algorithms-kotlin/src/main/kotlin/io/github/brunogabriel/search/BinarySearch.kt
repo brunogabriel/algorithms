@@ -1,8 +1,8 @@
 package io.github.brunogabriel.search
 
 fun <T : Comparable<T>> binarySearch(
-        array: Array<T>,
-        value: T
+    array: Array<T>,
+    value: T
 ): Int {
     var start = 0
     var end = array.size - 1
@@ -19,10 +19,10 @@ fun <T : Comparable<T>> binarySearch(
 }
 
 fun <T : Comparable<T>> recursiveBinarySearch(
-        array: Array<T>,
-        value: T,
-        start: Int = 0,
-        end: Int = array.size - 1
+    array: Array<T>,
+    value: T,
+    start: Int = 0,
+    end: Int = array.size - 1
 ): Int {
     if (start <= end) {
         val mid = start + (end - start) / 2

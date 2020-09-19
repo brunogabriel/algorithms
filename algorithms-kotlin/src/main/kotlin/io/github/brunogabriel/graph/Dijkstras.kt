@@ -1,6 +1,6 @@
 package io.github.brunogabriel.graph
 
-fun <T>Graph<T>.dijkstra(start: T): Map<T, Pair<T?, Int>> {
+fun <T> Graph<T>.dijkstra(start: T): Map<T, Pair<T?, Int>> {
     val visitedVertices = mutableSetOf<T>()
 
     val previousVertices: MutableMap<T, T?> = vertices

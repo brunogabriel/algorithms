@@ -1,6 +1,6 @@
 package io.github.brunogabriel.graph
 
-import java.util.*
+import java.util.LinkedList
 
 fun <T> Graph<T>.dfs(start: T): MutableList<T> {
     val visited = mutableListOf<T>()

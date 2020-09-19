@@ -25,4 +25,3 @@ fun eratosthenesPrimeCheck(number: Int): Boolean {
     }
     return true
 }
-
