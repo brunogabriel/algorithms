@@ -43,4 +43,4 @@ I tried to test all the codes and some algorithms have more than one implementat
 ## TO DO List
 
 - [ ] Add a tool to code quality
-- [ ] Add detekt support
+- [x] Add detekt support
