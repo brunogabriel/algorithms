@@ -40,7 +40,6 @@ I tried to test all the codes and some algorithms have more than one implementat
 
 - [Hill Climbing](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/ia/localsearch/HillClimbing.kt)
 
-## TO DO List
+## DONE
 
-- [ ] Add a tool to code quality
 - [x] Add detekt support
