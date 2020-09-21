@@ -33,7 +33,9 @@ I tried to test all the codes and some algorithms have more than one implementat
 - [Fibonacci](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/Fibonacci.kt)
 - [Kadane](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/Kadane.kt)
 - [Luhn Check](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/LuhnCheck.kt)
+- [Matrix operations](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/MatrixOperations.kt)
 - [Palindrome](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/Palindrome.kt)
+- [Power](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/Power.kt)
 - [Prime](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/Prime.kt)
 
 ### Local Search
