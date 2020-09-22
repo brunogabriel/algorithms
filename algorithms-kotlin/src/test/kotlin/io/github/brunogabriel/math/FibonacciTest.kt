@@ -26,6 +26,7 @@ class FibonacciTest {
         tests.forEach {
             assertThat(fibonacci(it.first)).isEqualTo(it.second)
             assertThat(recursiveFibonacci(it.first)).isEqualTo(it.second)
+            assertThat(fibonacciLogN(it.first)).isEqualTo(it.second)
         }
     }
 }
