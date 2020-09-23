@@ -12,7 +12,7 @@ fun <T> Graph<T>.kruskal(): Pair<List<Pair<T, T>>, Int> {
     while (visited != vertices) {
         val currentEdge = sorted.removeAt(0)
 
-        if (!isCycle(minTree, currentEdge.first)) {
+        if (!containsCycle(minTree, currentEdge.first)) {
             val edge = currentEdge.first
             visited.apply {
                 add(edge.first)

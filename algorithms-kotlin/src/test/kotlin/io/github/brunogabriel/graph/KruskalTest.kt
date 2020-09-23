@@ -22,7 +22,7 @@ class KruskalTest {
 
             Pair("B", "A") to 1,
             Pair("B", "C") to 0,
-            Pair("B", "D") to 1,
+            Pair("B", "D") to 3,
 
             Pair("C", "A") to 2,
             Pair("C", "B") to 0,

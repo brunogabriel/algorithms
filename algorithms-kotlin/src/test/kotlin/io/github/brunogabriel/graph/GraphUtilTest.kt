@@ -11,7 +11,7 @@ class GraphUtilTest {
         ),
 
         Triple(
-            listOf(Pair("A", "A"), Pair("C", "A")),
+            listOf(Pair("A", "B"), Pair("C", "A")),
             Pair("C", "B"), true
         ),
 
@@ -22,9 +22,9 @@ class GraphUtilTest {
     )
 
     @Test
-    fun `testing isCycle`() {
+    fun `testing containsCycle`() {
         tests.forEach {
-            assertThat(isCycle(it.first, it.second)).isEqualTo(it.third)
+            assertThat(containsCycle(it.first, it.second)).isEqualTo(it.third)
         }
     }
 }
