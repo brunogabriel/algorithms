@@ -8,6 +8,7 @@ I tried to test all the codes and some algorithms have more than one implementat
 
 ### Sorting
 
+- [Bubble Sort](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/sorting/BubbleSort.kt)
 - [Selection Sort](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/sorting/SelectionSort.kt)
 - [Quick Sort](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/sorting/QuickSort.kt)
 
