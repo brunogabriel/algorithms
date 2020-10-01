@@ -37,13 +37,18 @@ I tried to test all the codes and some algorithms have more than one implementat
 - [Luhn Check](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/LuhnCheck.kt)
 - [Matrix operations](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/MatrixOperations.kt)
 - [Palindrome](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/Palindrome.kt)
-- [Perfect City](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/PerfectCity.kt)
 - [Power](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/Power.kt)
 - [Prime](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/math/Prime.kt)
 
 ### Local Search
 
 - [Hill Climbing](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/ia/localsearch/HillClimbing.kt)
+
+### Codesignal
+
+- [Array packing](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/codesignal/ArrayPacking.kt)
+- [Perfect City](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/codesignal/PerfectCity.kt)
+- [New Road System](algorithms-kotlin/src/main/kotlin/io/github/brunogabriel/codesignal/NewRoadSystem.kt)
 
 ## DONE
 
